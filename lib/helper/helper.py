@@ -31,4 +31,7 @@ logo=G+"""
 '--'   '--'`-----' `-----' `--''--'`--'`--''--'.-'  / `--`--' 
                                                '---'          
 Starting.......
+Author : Thushitharan. M
+Index Number: IT19983370
+Organization: Sri Lanka Institute of Information Technology
 """%(R+G,underline+C+"https://github.com/thushi99/xssninja"+N+G)
