@@ -24,7 +24,7 @@ def check(getopt):
 	return payload if getopt.payload is None else getopt.payload
 	
 def start():
-	parse=argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter,usage="PwnXSS -u <target> [options]",epilog=epilog,add_help=False)
+	parse=argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter,usage="python3 xssninja.py -u <target> [options]",epilog=epilog,add_help=False)
 	
 	pos_opt=parse.add_argument_group("Options")
 	pos_opt.add_argument("--help",action="store_true",default=False,help="Show usage and help parameters")
@@ -36,12 +36,12 @@ def start():
 	pos_opt.add_argument("--user-agent",metavar="",help="Request user agent (e.g. Chrome/2.1.1/...)",default=agent)
 	pos_opt.add_argument("--single",metavar="",help="Single scan. No crawling just one address")
 	pos_opt.add_argument("--proxy",default=None,metavar="",help="Set proxy (e.g. {'https':'https://10.10.1.10:1080'})")
-	pos_opt.add_argument("--about",action="store_true",help="Print information about PwnXSS tool")
+	pos_opt.add_argument("--about",action="store_true",help="Print information about XSSninja tool")
 	pos_opt.add_argument("--cookie",help="Set cookie (e.g {'ID':'1094200543'})",default='''{"ID":"1094200543"}''',metavar="")
 	
 	getopt=parse.parse_args()
 	print(logo)
-	Log.info("Starting PwnXSS...")
+	Log.info("Starting XSSninja...")
 	if getopt.u:
 		core.main(getopt.u,getopt.proxy,getopt.user_agent,check(getopt),getopt.cookie,getopt.method)
 		

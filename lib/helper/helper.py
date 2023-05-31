@@ -31,4 +31,4 @@ logo=G+"""
 '--'   '--'`-----' `-----' `--''--'`--'`--''--'.-'  / `--`--' 
                                                '---'          
 Starting.......
-"""%(R+G,underline+C+"https://github.com/pwn0sec/PwnXSS"+N+G)
+"""%(R+G,underline+C+"https://github.com/thushi99/xssninja"+N+G)
